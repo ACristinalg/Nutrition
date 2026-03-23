@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;800;900&amp;family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "outline": "#757779",
+              "outline-variant": "#acadaf",
+              "tertiary-fixed": "#fcdc43",
+              "on-tertiary-fixed-variant": "#675700",
+              "on-primary-fixed": "#3a4a00",
+              "surface-dim": "#d2d4d8",
+              "on-secondary-fixed": "#3e3f42",
+              "inverse-on-surface": "#9c9d9f",
+              "primary": "#4e6300",
+              "tertiary-fixed-dim": "#edce35",
+              "tertiary-container": "#fcdc43",
+              "on-background": "#2d2f31",
+              "on-primary-fixed-variant": "#526900",
+              "on-tertiary": "#fff2c9",
+              "surface-container-lowest": "#ffffff",
+              "on-primary-container": "#4a5e00",
+              "primary-fixed-dim": "#beee00",
+              "on-tertiary-container": "#5c4e00",
+              "surface-container-highest": "#dbdde0",
+              "on-secondary-container": "#505254",
+              "tertiary": "#6b5b00",
+              "on-surface": "#2d2f31",
+              "inverse-surface": "#0c0e10",
+              "on-error": "#ffefec",
+              "primary-fixed": "#cafd00",
+              "secondary": "#5a5c5e",
+              "secondary-fixed-dim": "#d4d4d7",
+              "on-tertiary-fixed": "#473b00",
+              "surface-container-high": "#e1e2e6",
+              "surface-bright": "#f6f6f9",
+              "secondary-fixed": "#e2e2e5",
+              "on-primary": "#e1ff88",
+              "error": "#b02500",
+              "tertiary-dim": "#5d4f00",
+              "surface-tint": "#4e6300",
+              "secondary-dim": "#4e5052",
+              "primary-container": "#cafd00",
+              "surface-container": "#e7e8eb",
+              "secondary-container": "#e2e2e5",
+              "surface-variant": "#dbdde0",
+              "background": "#f6f6f9",
+              "on-surface-variant": "#5a5c5e",
+              "error-container": "#f95630",
+              "error-dim": "#b92902",
+              "on-error-container": "#520c00",
+              "inverse-primary": "#cafd00",
+              "surface-container-low": "#f0f0f3",
+              "on-secondary": "#f2f2f5",
+              "surface": "#f6f6f9",
+              "on-secondary-fixed-variant": "#5a5c5e",
+              "primary-dim": "#435600"
+            },
+            fontFamily: {
+              "headline": ["Space Grotesk"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .kinetic-gradient {
+            background: linear-gradient(135deg, #4e6300 0%, #cafd00 100%);
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="sticky top-0 w-full z-50 bg-[#f6f6f9]/80 dark:bg-[#2d2f31]/80 backdrop-blur-xl bg-surface_container_low border-none">
+<div class="flex justify-between items-center px-8 h-24 max-w-[1440px] mx-auto">
+<div class="text-2xl font-black italic tracking-tighter text-[#2d2f31] dark:text-white font-headline">VITALITY</div>
+<div class="hidden md:flex items-center gap-12">
+<a class="font-['Space_Grotesk'] uppercase tracking-tight text-sm font-bold text-slate-500 dark:text-slate-400 hover:text-[#D4FF00] hover:scale-105 transition-transform duration-200" href="#services">Services</a>
+<a class="font-['Space_Grotesk'] uppercase tracking-tight text-sm font-bold text-slate-500 dark:text-slate-400 hover:text-[#D4FF00] hover:scale-105 transition-transform duration-200" href="#about">About</a>
+<a class="font-['Space_Grotesk'] uppercase tracking-tight text-sm font-bold text-slate-500 dark:text-slate-400 hover:text-[#D4FF00] hover:scale-105 transition-transform duration-200" href="#testimonials">Testimonials</a>
+</div>
+<button class="bg-primary-container text-on-primary-container px-6 py-3 rounded-md font-headline font-bold uppercase tracking-tight hover:scale-105 transition-transform duration-200">Book Now</button>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative min-h-[921px] flex items-center overflow-hidden bg-inverse-surface">
+<div class="absolute inset-0 z-0 opacity-40">
+<img class="w-full h-full object-cover" data-alt="Intense athlete training in a dark gym" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCt93_Xz2Qfm8UNrr4bx5jwO7neW4cLnTGUtBXG2Z4NXxgfkw29qvPLyKp9TMVzc_NqK9d6UMQA7W9oG7AgGBgstvc3RzV4qmGxcj2ppavU-AIGqXz2hqMpHwUwHRsJQFkLaXDiptqxOYl3oy5fxMlb9uCk4imFRCH21qh51G4TGsGHkRHdB9R5Kw-IazN8d3Cwt2kehjwgxyymLTnIGxBTRu1i7-ck8rEIEF0dqCbIZ4R1rvo589HqEKqvvFf2Zr2AgrH-1iyzS9Vn"/>
+</div>
+<div class="absolute inset-0 bg-gradient-to-r from-inverse-surface via-inverse-surface/60 to-transparent z-10"></div>
+<div class="relative z-20 max-w-[1440px] mx-auto px-8 w-full">
+<div class="max-w-3xl">
+<span class="inline-block px-4 py-1 mb-6 bg-primary-container text-on-primary-container font-label text-xs font-black tracking-widest uppercase rounded-full">Elite Performance</span>
+<h1 class="font-headline text-6xl md:text-8xl font-black text-white leading-[0.9] tracking-tighter mb-8 italic">
+                    FUEL YOUR <br/> <span class="text-primary-fixed">PERFORMANCE</span>
+</h1>
+<p class="font-body text-xl text-slate-300 mb-10 max-w-xl leading-relaxed">
+                    Personalized nutrition plans for athletes and fitness enthusiasts. Scientific precision meets high-octane energy.
+                </p>
+<div class="flex flex-wrap gap-4">
+<a class="bg-primary-container text-on-primary-container px-10 py-5 rounded-md font-headline font-black text-lg uppercase tracking-tight hover:scale-105 transition-all shadow-xl shadow-primary/20" href="#booking">
+                        Start Your Journey
+                    </a>
+<a class="border border-white/20 text-white px-10 py-5 rounded-md font-headline font-black text-lg uppercase tracking-tight hover:bg-white/10 transition-all" href="#services">
+                        View Methods
+                    </a>
+</div>
+</div>
+</div>
+</header>
+<!-- Services Section (Bento Style) -->
+<section class="py-32 px-8 bg-surface" id="services">
+<div class="max-w-[1440px] mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
+<div class="max-w-2xl">
+<label class="font-label text-sm font-bold tracking-[0.2em] text-primary uppercase mb-4 block">Precision Services</label>
+<h2 class="font-headline text-5xl md:text-6xl font-extrabold tracking-tighter text-on-background">SYSTEMS FOR SUCCESS</h2>
+</div>
+<p class="font-body text-on-surface-variant max-w-md text-right">We don't do generic. Our protocols are built on individual metabolic data and performance goals.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<!-- Service Card 1 -->
+<div class="md:col-span-8 group relative overflow-hidden rounded-xl bg-surface-container-lowest h-[500px]">
+<img class="absolute inset-0 w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="Healthy meal prep containers with vibrant vegetables" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBT90jXmLsuQahrxyWR8zHdxC2voLnQiFyuc-eRSDhsEWRxY6PgPKi5Ut2WcaJbkS8QF72BzF0YbS8yatLLqupAJLtzNqDg03MN7n1_kSuxh7zeBSdF7ioaSzrdmkNpG6u8uO1xkXgIxnWLobl3ItTRTSiLxc9W4dio54eZxu8RzjgASt-80nrf51cCuDQ0X8nCNQ0dbZWi3buhBq8U4gdTDozQqSGsuuHBYQLvA9zQh5jktM7yiOZbi0H0NlyZXfmHMnA5Rz49Gp6X"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-background to-transparent opacity-80"></div>
+<div class="absolute bottom-0 left-0 p-10">
+<span class="text-primary-fixed font-headline font-bold text-sm tracking-widest uppercase mb-4 block">01 / Nutrition</span>
+<h3 class="text-white font-headline text-4xl font-black mb-4">Custom Meal Prep</h3>
+<p class="text-slate-300 max-w-md font-body mb-6">Macro-balanced fuel tailored to your specific metabolic rate and training volume.</p>
+<button class="bg-white text-on-background px-6 py-2 rounded-md font-headline font-bold uppercase text-sm hover:bg-primary-container hover:text-on-primary-container transition-colors">Explore Plan</button>
+</div>
+</div>
+<!-- Service Card 2 -->
+<div class="md:col-span-4 group relative overflow-hidden rounded-xl bg-surface-container-lowest h-[500px]">
+<img class="absolute inset-0 w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="Close up of nutritional supplements and data" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrivMQRfL_WIRZ1SSql-MFiILG2tH_dH_PTSRkzZtk2xIvmkXuVmWKjZf2komenWnzMsAmDddw0jlmtkyl4mRV0EzQNNtNjUkJBlVFOtgWtkZw_awbyhWy0Ru27zxHVflGlovOq8bIzIX3ghaL5pKT6-DOknR7yRDrm9hR6WKaj1o-rs-G9-17aKIQAw9Z-xWmZQeinfYEPOG4bx_J72u6v4qnaDdIKcDaGx9tNw5nKLhnZawVO5fsmVdnmaZ6OOcC9kh5TEseSOBO"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-background to-transparent opacity-80"></div>
+<div class="absolute bottom-0 left-0 p-10">
+<span class="text-primary-fixed font-headline font-bold text-sm tracking-widest uppercase mb-4 block">02 / Science</span>
+<h3 class="text-white font-headline text-4xl font-black mb-4 leading-tight">Performance Optimization</h3>
+<button class="bg-white/10 backdrop-blur-md border border-white/20 text-white p-3 rounded-full hover:bg-primary-container hover:text-on-primary-container transition-all">
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Service Card 3 -->
+<div class="md:col-span-12 group relative overflow-hidden rounded-xl bg-surface-container-lowest h-[400px]">
+<img class="absolute inset-0 w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="Athlete measuring body composition and progress" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBODJwYsvxfZ2K4COHWpTUi7KjooQRL95ITxhS_vzFq7_4eiumnCSkLLZqC975Detn4uKFBI4zXr1HmC4-wkc4oh8VFkGXvYFdGs4ChJt3YzgaA56C5Lw_jg542Eo1tlg1KQlQ3a3o6Z1YRW1TYPJDXVEbyVRp45QzixlelbxwX7wwbcvH9CH9N27MfO-6kwzBIVnp1R22V4CsTlnoo9mlKiUJq5ZHZQ7lTAhP4oJopS3vnzWR7_FriUWyLA2GGPVmMh6KEORpbGHXM"/>
+<div class="absolute inset-0 bg-gradient-to-r from-on-background to-transparent opacity-90"></div>
+<div class="absolute inset-y-0 left-0 p-12 flex flex-col justify-center max-w-xl">
+<span class="text-primary-fixed font-headline font-bold text-sm tracking-widest uppercase mb-4 block">03 / Results</span>
+<h3 class="text-white font-headline text-5xl font-black mb-4">Body Recomposition</h3>
+<p class="text-slate-300 font-body text-lg">The ultimate protocol for fat loss and lean muscle gain. Precision measured, results guaranteed.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Process Section -->
+<section class="py-32 bg-surface-container-low overflow-hidden">
+<div class="max-w-[1440px] mx-auto px-8">
+<div class="mb-20 text-center">
+<h2 class="font-headline text-5xl md:text-7xl font-black tracking-tighter text-on-background mb-4">THE PROTOCOL</h2>
+<div class="h-2 w-32 bg-primary mx-auto"></div>
+</div>
+<div class="relative grid grid-cols-1 md:grid-cols-4 gap-4">
+<!-- Vertical Line (Visible on Desktop) -->
+<div class="hidden md:block absolute top-1/2 left-0 w-full h-px bg-outline-variant/30 -z-10"></div>
+<!-- Step 1 -->
+<div class="bg-surface-container-lowest p-10 rounded-xl hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border-l-4 border-primary">
+<div class="text-6xl font-headline font-black text-surface-container-high mb-6">01</div>
+<h4 class="font-headline text-2xl font-extrabold mb-4 uppercase">Consultation</h4>
+<p class="font-body text-on-surface-variant text-sm">Deep dive into your training history, goals, and current lifestyle habits.</p>
+</div>
+<!-- Step 2 -->
+<div class="bg-surface-container-lowest p-10 rounded-xl hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border-l-4 border-primary">
+<div class="text-6xl font-headline font-black text-surface-container-high mb-6">02</div>
+<h4 class="font-headline text-2xl font-extrabold mb-4 uppercase">Analysis</h4>
+<p class="font-body text-on-surface-variant text-sm">Metabolic assessment and nutrient deficiency screening using clinical data.</p>
+</div>
+<!-- Step 3 -->
+<div class="bg-surface-container-lowest p-10 rounded-xl hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border-l-4 border-primary">
+<div class="text-6xl font-headline font-black text-surface-container-high mb-6">03</div>
+<h4 class="font-headline text-2xl font-extrabold mb-4 uppercase">Personal Plan</h4>
+<p class="font-body text-on-surface-variant text-sm">Launch of your tailored nutrition architecture and supplementation schedule.</p>
+</div>
+<!-- Step 4 -->
+<div class="bg-surface-container-lowest p-10 rounded-xl hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border-l-4 border-primary">
+<div class="text-6xl font-headline font-black text-surface-container-high mb-6">04</div>
+<h4 class="font-headline text-2xl font-extrabold mb-4 uppercase">Success</h4>
+<p class="font-body text-on-surface-variant text-sm">Continuous tracking and iterative adjustments for peak performance results.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials Section -->
+<section class="py-32 bg-inverse-surface text-white" id="testimonials">
+<div class="max-w-[1440px] mx-auto px-8">
+<div class="flex flex-col items-center mb-24 text-center">
+<span class="text-primary-fixed font-label text-sm font-bold tracking-[0.3em] mb-4">ELITE VERDICTS</span>
+<h2 class="font-headline text-5xl md:text-7xl font-black italic tracking-tighter">THE 1% RESULTS</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Quote 1 -->
+<div class="bg-white/5 p-12 rounded-xl backdrop-blur-sm relative border border-white/10">
+<span class="material-symbols-outlined text-primary-fixed text-5xl absolute top-8 right-8 opacity-20">format_quote</span>
+<p class="font-body text-lg italic mb-10 leading-relaxed text-slate-200">"The precision in the macros changed everything. My recovery time dropped by 40% in just three weeks. Unmatched expertise."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full overflow-hidden border-2 border-primary">
+<img class="w-full h-full object-cover" data-alt="Female crossfit athlete profile" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqVRMSUlNWkQ63zJh19aLu6rIoMWSowJvq76aIEW8HC6EfpWJCaBSbVNdObCwLDzboPsSs5RzhLXgvdXCO04hpngkxFbTAfXGIFOtXrZRDBdZAD3XzfPZ6InMNFNwBpXzZmiEmgvCrWX7Neq2mBfl_-qTWdVFXmX6Aq7kzyuYp5gOYIQfCHMo-QC6AbNZTBsPFZQ4d9QHq5x-Xdy2TPgy94uDPhHruxAa9obAp4IhNME84g924UtNPFRdMINUOwwxCSB74MsEL5xB2"/>
+</div>
+<div>
+<h5 class="font-headline font-bold text-white uppercase text-sm tracking-widest">Sarah Jenkins</h5>
+<span class="font-body text-xs text-primary-fixed uppercase tracking-wider">Crossfit Athlete</span>
+</div>
+</div>
+</div>
+<!-- Quote 2 -->
+<div class="bg-primary p-12 rounded-xl relative shadow-2xl shadow-primary/20 scale-105 z-10">
+<span class="material-symbols-outlined text-white text-5xl absolute top-8 right-8 opacity-40">format_quote</span>
+<p class="font-body text-lg italic mb-10 leading-relaxed text-white">"Finally a nutritionist who understands high-intensity training requirements. VITALITY is the secret weapon in my camp."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full overflow-hidden border-2 border-white">
+<img class="w-full h-full object-cover" data-alt="Male bodybuilder smiling" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKFZuOB3zT1C-CKuq86BgE9IDd_qMeiodUvOiys1whi3CJPcSdB6SNA3QHZQ1tJGrBG1s34IV0_5odMFMNtUYY2jvfX1LK4XbzZkveFRrm17nPyTAsnEbwsBliZvMjBGXoW0c9Vxdref1fiH16lTmo1xkmBb7ZFed3XF-smvzuHbSpq2UnyL8_zrDqoCX_iV0LRxdfEAuIL2CqbMXYI5WRT6PjRFAFIDe6h_6bK5w5MwBkqVAEllb-CAD19_tb9mjmvOcli9IXmf04"/>
+</div>
+<div>
+<h5 class="font-headline font-bold text-white uppercase text-sm tracking-widest">Marcus Thorne</h5>
+<span class="font-body text-xs text-white uppercase tracking-wider">Pro Bodybuilder</span>
+</div>
+</div>
+</div>
+<!-- Quote 3 -->
+<div class="bg-white/5 p-12 rounded-xl backdrop-blur-sm relative border border-white/10">
+<span class="material-symbols-outlined text-primary-fixed text-5xl absolute top-8 right-8 opacity-20">format_quote</span>
+<p class="font-body text-lg italic mb-10 leading-relaxed text-slate-200">"I've never felt more energized during my ultra-marathons. The tailored electrolyte and fueling strategy was a game-changer."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full overflow-hidden border-2 border-primary">
+<img class="w-full h-full object-cover" data-alt="Ultramarathon runner in nature" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYtuOPEL20u6H3d7_FQPa1z6R6X-6OrTLz_bkFABAdwhYZrEeRq3MQSrbiB5RVbCWqtJfPYt97nrSOSt2y9eiO_jcyfRflMEKKcW5zPy2dCqR1Hkt4soOGkEZdP2qbmscfSD9dboCvOPvWbl7tdIw7y-VqyA0s3nfowRhF20wxi0-oNY1EGPxR84ze7rDalT9Ptnv2Ei5o8zu_HpltVqeLtDCeOYWhDBzEVqY4_YS4NRHc4rx1_-S-UpxYFeakOdMvmHyW0lEdLdQz"/>
+</div>
+<div>
+<h5 class="font-headline font-bold text-white uppercase text-sm tracking-widest">Elena Rossi</h5>
+<span class="font-body text-xs text-primary-fixed uppercase tracking-wider">Ultra Runner</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Booking Section -->
+<section class="py-32 bg-surface" id="booking">
+<div class="max-w-[1440px] mx-auto px-8">
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-2xl flex flex-col lg:flex-row border border-outline-variant/10">
+<div class="lg:w-2/5 kinetic-gradient p-16 text-on-primary-container flex flex-col justify-between min-h-[400px]">
+<div>
+<h2 class="font-headline text-5xl font-black mb-8 leading-[0.9] tracking-tighter italic">LOCK IN YOUR PERFORMANCE</h2>
+<p class="font-body text-lg mb-8 opacity-80">Slots for elite 1-on-1 coaching are limited. Secure your initial assessment today.</p>
+</div>
+<div class="space-y-4">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined bg-white/20 p-2 rounded-full">check_circle</span>
+<span class="font-headline font-bold uppercase tracking-tight text-sm">Full Metabolic Audit</span>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined bg-white/20 p-2 rounded-full">check_circle</span>
+<span class="font-headline font-bold uppercase tracking-tight text-sm">Custom Protocol Launch</span>
+</div>
+</div>
+</div>
+<div class="lg:w-3/5 p-16">
+<form class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="space-y-2">
+<label class="font-label text-xs font-bold uppercase tracking-widest text-on-surface-variant">Full Name</label>
+<input class="w-full bg-surface-container-high border-none rounded-md p-4 focus:ring-2 focus:ring-primary transition-all" placeholder="John Doe" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="font-label text-xs font-bold uppercase tracking-widest text-on-surface-variant">Email Address</label>
+<input class="w-full bg-surface-container-high border-none rounded-md p-4 focus:ring-2 focus:ring-primary transition-all" placeholder="john@athlete.com" type="email"/>
+</div>
+<div class="space-y-2">
+<label class="font-label text-xs font-bold uppercase tracking-widest text-on-surface-variant">Primary Goal</label>
+<select class="w-full bg-surface-container-high border-none rounded-md p-4 focus:ring-2 focus:ring-primary transition-all">
+<option>Muscle Gain</option>
+<option>Fat Loss / Recomp</option>
+<option>Endurance Fueling</option>
+<option>General Vitality</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="font-label text-xs font-bold uppercase tracking-widest text-on-surface-variant">Select Date</label>
+<input class="w-full bg-surface-container-high border-none rounded-md p-4 focus:ring-2 focus:ring-primary transition-all" type="date"/>
+</div>
+<div class="md:col-span-2 space-y-2">
+<label class="font-label text-xs font-bold uppercase tracking-widest text-on-surface-variant">Message (Optional)</label>
+<textarea class="w-full bg-surface-container-high border-none rounded-md p-4 focus:ring-2 focus:ring-primary transition-all h-32" placeholder="Tell us about your current training..."></textarea>
+</div>
+<div class="md:col-span-2">
+<button class="w-full kinetic-gradient text-on-primary-container font-headline font-black text-xl py-5 rounded-md uppercase tracking-tight hover:scale-[1.02] transition-transform shadow-xl" type="submit">
+                                Request Assessment
+                            </button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-[#2d2f31] dark:bg-[#0c0e10] w-full py-16">
+<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-3 gap-12 items-center text-center md:text-left">
+<div>
+<div class="text-lg font-black text-white font-headline mb-4 uppercase">VITALITY PERFORMANCE NUTRITION</div>
+<p class="font-body text-slate-400 text-xs tracking-widest leading-loose uppercase">
+                    Precision Engineered Fueling <br/> For The Modern Athlete.
+                </p>
+</div>
+<div class="flex flex-wrap justify-center gap-6">
+<a class="font-['Manrope'] text-xs tracking-widest uppercase text-slate-400 hover:text-white transition-colors" href="#">Instagram</a>
+<a class="font-['Manrope'] text-xs tracking-widest uppercase text-slate-400 hover:text-white transition-colors" href="#">LinkedIn</a>
+<a class="font-['Manrope'] text-xs tracking-widest uppercase text-slate-400 hover:text-white transition-colors" href="#">Contact</a>
+<a class="font-['Manrope'] text-xs tracking-widest uppercase text-slate-400 hover:text-white transition-colors" href="#">Credentials</a>
+<a class="font-['Manrope'] text-xs tracking-widest uppercase text-slate-400 hover:text-white transition-colors" href="#">Privacy Policy</a>
+</div>
+<div class="text-right flex flex-col items-center md:items-end">
+<div class="text-[#D4FF00] font-headline font-black text-2xl italic tracking-tighter mb-4">VITALITY</div>
+<p class="font-['Manrope'] text-[10px] tracking-[0.2em] uppercase text-slate-500">© 2024 VITALITY PERFORMANCE NUTRITION. PRECISION ENGINEERED.</p>
+</div>
+</div>
+</footer>
+</body></html>
